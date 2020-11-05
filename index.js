@@ -8,15 +8,13 @@ const produceCalendar = (paymentDatesArray = [], iterations = 0) => {
     const event = new Date();
     const monthToCalculate = event.getMonth() + iterations 
     event.setMonth(monthToCalculate);
-
-    const year = event.getFullYear()
     const calculatedMonth = event.getMonth()
 
-    const fifteenth = new Date(year, calculatedMonth, 15);
-    const lastDay = new Date(year, calculatedMonth + 1, 0);
-
-    const bonus = calculatePaymentDate(fifteenth)
-    const salary = calculatePaymentDate(lastDay)
+    
+    event.setDate(15)
+    const bonus = calculatePaymentDate(event)
+    event.setMonth(calculatedMonth+1, 0)
+    const salary = calculatePaymentDate(event)
     const month = event.toLocaleString('default', { month: 'long' })
 
     const monthObject = {month, bonus, salary }
@@ -25,6 +23,7 @@ const produceCalendar = (paymentDatesArray = [], iterations = 0) => {
 }
 
 const calculatePaymentDate = (event) => {
+
     const day = event.toString().slice(0,3)
     const date = event.getDate()
 
