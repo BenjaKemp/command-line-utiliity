@@ -2,7 +2,13 @@ command line utility to calculate salary and bonus payments per month for a peri
 
 to run this utility
 
-clone the repository to your local machine 
+open up a new session in your shell and run 
+
+git clone https://github.com/BenjaKemp/command-line-utiliity.git
+
+enter the folder with
+
+cd command-line-utiliity
 
 run 
 
@@ -12,7 +18,7 @@ followed by
 
 ``` npm link ```
 
-it's a means to connect your parent application to a module you have locally on your machine
+it's a means to connect your parent application to a module you have locally on your machine. It will also link any bins in the package to {prefix}/bin/{name}.
 
 finally, you're ready to run the utility by typing 
 
