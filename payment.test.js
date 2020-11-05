@@ -1,4 +1,5 @@
-const { convertToCSV, calculatePaymentDate, produceCalendar  } = require('./index');
+const { calculatePaymentDate, produceCalendar  } = require('./index');
+const convertToCSV  = require('./helper');
 const testArray = require('./payment.spec.json')
 describe('produceCalendar    ', () => {
   test('should produce an array with objects containing information for each month ', () => {
@@ -30,6 +31,11 @@ describe('calculatePaymentDate    ', () => {
     const date = new Date('2020',10,0,0,0,0)
     const res = calculatePaymentDate(date)
     expect(res).toBe(30)
+  });
+  test('calculatePaymentDate to return bonus payments on the 15th if its a weekday', () => {
+    const date = new Date('2020', 11, 15, 0, 0, 0)
+    const res = calculatePaymentDate(date)
+    expect(res).toBe(15)
   });
   test('calculatePaymentDate to return bonus payments on the following wednesday if the 15th was a weekend', () => {
     const date = new Date('2020', 10, 15,0,0,0)

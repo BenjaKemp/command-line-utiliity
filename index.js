@@ -46,7 +46,6 @@ const datesArray = produceCalendar()
 console.log(convertToCSV(datesArray))
 
 module.exports = {
-    convertToCSV,
     calculatePaymentDate,
     produceCalendar
 }
