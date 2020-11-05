@@ -1,0 +1,61 @@
+[{
+        "month": "November",
+        "bonus": 13,
+        "salary": 30
+    },
+    {
+        "month": "December",
+        "bonus": 15,
+        "salary": 30
+    },
+    {
+        "month": "January",
+        "bonus": 15,
+        "salary": 31
+    },
+    {
+        "month": "February",
+        "bonus": 15,
+        "salary": 29
+    },
+    {
+        "month": "March",
+        "bonus": 15,
+        "salary": 26
+    },
+    {
+        "month": "April",
+        "bonus": 15,
+        "salary": 31
+    },
+    {
+        "month": "May",
+        "bonus": 19,
+        "salary": 30
+    },
+    {
+        "month": "June",
+        "bonus": 15,
+        "salary": 31
+    },
+    {
+        "month": "July",
+        "bonus": 15,
+        "salary": 30
+    },
+    {
+        "month": "August",
+        "bonus": 13,
+        "salary": 30
+    },
+    {
+        "month": "September",
+        "bonus": 15,
+        "salary": 31
+    },
+    {
+        "month": "October",
+        "bonus": 15,
+        "salary": 30
+    }
+]
